@@ -12,3 +12,9 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tuts.settings")
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
+
+if os.environ.get('home') == 'C:\Documents and Settings\dansong':
+    from django.core.wsgi import get_wsgi_application
+    from dj_static import Cling
+
+    application = Cling(get_wsgi_application())
