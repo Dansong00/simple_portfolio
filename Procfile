@@ -1,1 +1,1 @@
-web: gunicorn tuts.wsgi --log-file
+web: gunicorn tuts.wsgi 
